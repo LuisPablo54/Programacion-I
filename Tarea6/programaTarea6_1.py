@@ -1,4 +1,4 @@
-#Tarea 6_1
+#Tarea 6_1 Numeros mayo que y asi
 #Luis Pablo López Iracheta 192301-9
 
 
