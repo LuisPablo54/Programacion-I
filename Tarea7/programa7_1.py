@@ -11,13 +11,15 @@ import matplotlib.pyplot as plt
 gravedad_m_s = 9.81
 angulo_G = 0
 velocidadInicial_m_s = 400
+angulo_G_D = 90
 
 #Ejes
 distancia_Y = []
 angulos_X = []
+angulos_X_derecha = []
 
-print("  Grados  | Distancia ")
-print("----------|-----------")
+print(" Primera  |  Segunda | Distancia ")
+print("----------|----------|-----------")
 
 
 
@@ -33,12 +35,15 @@ while angulo_G < 91:
     #Furmula para la distancia
     distancia = ((2 * (velocidadInicial_m_s ** 2) * coseno_rad * seno_rad ) / gravedad_m_s)
     
-    print(" %6.2f   |  %6.2f  "%(angulo_G ,distancia))
+    #Imprimir 
+    print(" %6.2f   |  %6.2f  |  %6.2f  "%(angulo_G, angulo_G_D, distancia))
     
-    #Guardar y aumentar los datos
+    #Guardar, aumentar y decrecimiento de los datos
     distancia_Y.append(distancia)
     angulos_X.append(angulo_G)
+    angulos_X_derecha.append(angulo_G_D)
     angulo_G = angulo_G + 5
+    angulo_G_D = angulo_G_D - 5
 
 #Grafica y sus propiedades
 plt.plot(angulos_X, distancia_Y, "go--", label ="Distancia - Ángulo")
