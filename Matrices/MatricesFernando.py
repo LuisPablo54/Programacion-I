@@ -1,14 +1,15 @@
 #Matriz
-resultados = []
 
-c = 0
-i = 0
-j = 0
-n = 0
-p = 0
 
 
 def multiplicacion(a,b):
+    resultados = []
+
+    c = 0
+    i = 0
+    j = 0
+    n = 0
+    p = 0
     print(f"Se realiza una multiplicación de las matices {a} y {b}: ")
     for i in range(len(a)):  # Iterar sobre las filas de a
         fila_resultante = []  # Inicializar una lista para la fila resultante actual
