@@ -1,10 +1,3 @@
-#Existen varias tecnicas para realizar un videjuego
-#Una de esas tenicas, para las imagenes, es la llamada 2ble buffer
-
-#La cual consiste en crear un copia deigital de la imagen que trabajamos
-#Conn la que se cambia lo que nesesitamos y al finalizar se cambia por la imagen
-#Que el usuaria ve 
-
 import pygame
 import sys
 
@@ -52,4 +45,4 @@ while True:
     pygame.display.flip()
 
     # Controlar la velocidad del bucle
-    pygame.time.Clock().tick(30)
+    pygame.time.Clock().tick(20)
