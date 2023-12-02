@@ -14,9 +14,9 @@ white = (255, 255, 255)
 black = (0, 0, 0)
 
 # Pelota
-ball_radius = 20
+ball_radius = 10
 ball_color = (255, 255, 0)
-ball_speed = [5, 5]  # velocidad en x e y
+ball_speed = [30, 10]  # velocidad en x e y
 
 ball = pygame.draw.circle(screen, ball_color, (width // 2, height // 2), ball_radius)
 
@@ -28,14 +28,14 @@ while True:
             sys.exit()
 
     # Actualizar la posición de la pelota
-    ball.x += ball_speed[0]
-    ball.y += ball_speed[1]
+    ball.x = ball_speed[0] 
+    ball.y = ball_speed[1] 
 
     # Rebotar en los bordes
     if ball.left < 0 or ball.right > width:
-        ball_speed[0] = -ball_speed[0]
+        ball_speed[0] = -ball_speed[0] 
     if ball.top < 0 or ball.bottom > height:
-        ball_speed[1] = -ball_speed[1]
+        ball_speed[1] = -ball_speed[1] 
 
     # Dibujar la pelota y la pantalla
     screen.fill(black)
@@ -45,4 +45,4 @@ while True:
     pygame.display.flip()
 
     # Controlar la velocidad del bucle
-    pygame.time.Clock().tick(20)
+    pygame.time.Clock().tick(40)
