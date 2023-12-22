@@ -126,6 +126,7 @@ while nuevojuego == True:
               #Aqui creamos una interrupcion en el progrma como un error
               # que le mostrara la cadena de texto escrita.
               raise Exception("Esa categoria no existe, por favor selecciona una correcta") 
+          
     #Continuamos con los siguientes bloques que son como el primero pero con diferentes categorias
     elif dificultad == "intermedio":
           print("\nBuena opcion, siempre en equilibrio, vamos a elegir tematica \n")
