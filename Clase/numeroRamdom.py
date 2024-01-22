@@ -2,7 +2,7 @@
 
 import random
 
-#Genro la lsitas vacia}
+#Genero la listas vacia
 lista = []
 
 for i in range(0, 16):

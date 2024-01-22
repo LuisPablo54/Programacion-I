@@ -11,7 +11,7 @@ while SeguirJugando:
     Apuesta = -1
     intentos = 3
     #Lo minimo que necesito para que le este preguntando hasta que le de un valor valido 1 a 7
-    while (Apuesta < 2 or Apuesta > 12):
+    while (Apuesta < 1 or Apuesta > 12):
         Apuesta = int(input("La suma a la que apuestas: "))
         intentos = intentos - 1
         if (intentos < 1 and intentos > -1):
