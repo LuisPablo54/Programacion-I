@@ -31,5 +31,6 @@ d = clonandoLista(a)
 print("y: ", y)
 print("a: ", a)
 print("d: ", d)
-
-print("El valor maximo es", Maximo(10, 20))
+num1 = 10
+num2 = 15
+print(f"El valor maximo de {num1} y {num2} es", Maximo(num1, num2))
